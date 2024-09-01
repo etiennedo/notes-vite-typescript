@@ -15,28 +15,14 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #fff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #fff;
-}
-
 body {
   margin: 0;
   display: flex;
-  place-items: center;
-  min-height: 100vh;
-}
-
-.read-the-docs {
-  color: #888;
+  height: 100vh;
 }
 
 .title {
-  padding: 0 1rem;
+  padding: 0;
 }
 
 button {
@@ -49,47 +35,30 @@ button {
   font-family: inherit;
   background-color: #1a1a1a;
   cursor: pointer;
+  border-color: #666;
   transition: border-color 0.25s;
   margin: 10px 0 10px 10px;
-}
-button:hover {
-  border-color: #fff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
 }
 
 button + button {
   margin-left: 5px; 
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
-
 aside {
   width: 30vw;
   height: 100vh;
   float: left;
-  background-color: #222222;
+  background-color: #111;
   overflow: scroll;
+  padding: 0rem 1rem;
+  margin: 0;
 }
 
 li {
-  margin: 0.5rem 1rem;
+  margin: 0.5rem 0;
   padding: 1rem;
   list-style: none;
-  border: 1px solid #333333;
+  border: 1px solid #242424;
   border-radius: 0.5rem;
   white-space: nowrap;
   overflow: hidden;
@@ -97,22 +66,24 @@ li {
 }
 
 li.selected {
-  background-color: #444444;
+  background-color: #242424;
 }
 
 ul#notesList {
   padding: 0;
+  margin: 0;
 }
 
 main {
   height: 100vh;
-  background-color: #333333;
+  background-color: #242424;
+  margin: 0;
 }
 
 #noteContent {
   display: block;
   border: none;
-  background-color: #333333;
+  background-color: #242424;
   color: #ffffff;
   padding: 1rem;
   width: 70vw;
@@ -121,4 +92,16 @@ main {
   outline: none;
   font-size: 1rem;
   overflow: hidden;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+#search {
+  padding: 0.5rem;
+  list-style: none;
+  border: 1px solid #333;
+  border-radius: 0.5rem;
+  outline: none;
+  width: 100%;
+  caret-color: rgba(255, 255, 255, 0.87);
+  font-size: 1rem;
 }
